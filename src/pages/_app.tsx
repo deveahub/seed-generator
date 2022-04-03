@@ -2,6 +2,7 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { RecoilRoot } from 'recoil';
 
+import ThemeVariantButton from '@/components/ThemeVariantButton';
 import { Toasts } from '@/components/Toast';
 import { withSWRConfig } from '@/pods/swr';
 import { globalStyles } from '@/styles';
@@ -31,6 +32,7 @@ function App({ Component, pageProps: { fallback, ...pageProps } = {} }: Props) {
       <RecoilRoot>
         {enhancedComponent}
         <Toasts />
+        <ThemeVariantButton />
       </RecoilRoot>
     </>
   );

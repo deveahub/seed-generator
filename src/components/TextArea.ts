@@ -5,6 +5,8 @@ const Input = styled('textarea', {
   borderRadius: '$sm',
   border: '1px solid',
   borderColor: '$foreground',
+  backgroundColor: '$bg',
+  color: '$text',
 });
 
 export default Input;

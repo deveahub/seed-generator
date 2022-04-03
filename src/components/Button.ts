@@ -10,6 +10,14 @@ const Button = styled('button', {
   '&:hover': {
     backgroundColor: '$primary-dark',
   },
+
+  variants: {
+    variant: {
+      rounded: {
+        borderRadius: '100%',
+      },
+    },
+  },
 });
 
 export const ButtonLink = styled(Button, {

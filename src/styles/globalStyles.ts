@@ -23,6 +23,7 @@ const globalStyles = globalCss({
   'div#__next': {
     width: '100%',
     mx: 'auto',
+    position: 'relative',
 
     '@bp15': {
       maxWidth: '550px',
