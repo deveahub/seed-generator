@@ -1,6 +1,8 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { RecoilRoot } from 'recoil';
 
+import { Toasts } from '@/components/Toast';
 import { withSWRConfig } from '@/pods/swr';
 import { globalStyles } from '@/styles';
 
@@ -26,7 +28,10 @@ function App({ Component, pageProps: { fallback, ...pageProps } = {} }: Props) {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"
         />
       </Head>
-      {enhancedComponent}
+      <RecoilRoot>
+        {enhancedComponent}
+        <Toasts />
+      </RecoilRoot>
     </>
   );
 }

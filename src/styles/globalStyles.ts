@@ -14,16 +14,19 @@ const globalStyles = globalCss({
   '*': {
     margin: 0,
   },
-  'html, body': {
+  'html, body, div#__next': {
     height: '100%',
   },
   html: {
     scrollBehavior: 'smooth',
   },
   'div#__next': {
-    maxWidth: '1500px',
     width: '100%',
     mx: 'auto',
+
+    '@bp15': {
+      maxWidth: '550px',
+    },
   },
   body: {
     backgroundColor: '$bg',
@@ -40,12 +43,12 @@ const globalStyles = globalCss({
     },
   },
   'input, button, a, select': {
-    outlineColor: '$primary',
+    outlineColor: '$primary-dark',
   },
   'input:focus-visible, button:focus-visible, a:focus-visible, select:focus-visible':
     {
       outlineStyle: 'solid',
-      outlineColor: '$primary',
+      outlineColor: '$primary-dark',
       outlineWidth: 2,
       outlineOffset: 0,
     },
