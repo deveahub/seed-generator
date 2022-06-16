@@ -5,5 +5,4 @@ module.exports = {
   distDir: 'dist',
   reactStrictMode: true,
   swcMinify: true,
-  assetPrefix: isProd ? '/seed-generator/' : '',
 };
