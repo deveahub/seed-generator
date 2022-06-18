@@ -1,4 +1,4 @@
 # Seed Generator
 
-![Screenshot](https://rrios.dev/seed-generator.jpeg)
+![Screenshot](https://seed-generator.rrios.dev/seed-generator.jpeg)
 [URL](https://rriosper.github.io/seed-generator/)
